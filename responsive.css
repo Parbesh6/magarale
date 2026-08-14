@@ -1,0 +1,52 @@
+/* =========================================================
+   PERFECT ACADEMY — RESPONSIVE ADJUSTMENTS
+   ========================================================= */
+
+/* Large tablets / small laptops */
+@media (max-width: 1199.98px){
+  .hero{ padding:150px 0 100px; }
+  .verify-panel{ margin-top:-70px; }
+}
+
+/* Tablets */
+@media (max-width: 991.98px){
+  .hero{ text-align:center; }
+  .hero p.lead-text{ margin-left:auto; margin-right:auto; }
+  .hero .slogan-strip{ margin-left:auto; margin-right:auto; text-align:left; }
+  .hero .hero-ctas{ justify-content:center; }
+  .trust-hero-figure{ padding-bottom:40px; }
+  .pa-navbar .navbar-collapse{
+    background:#fff;
+    margin-top:14px;
+    padding:18px;
+    border-radius:var(--r-md);
+    box-shadow:var(--shadow-md);
+  }
+  .pa-navbar .nav-link{ color:var(--gray-700) !important; }
+  .contact-info-card{ margin-bottom:26px; }
+}
+
+/* Phones */
+@media (max-width: 767.98px){
+  .section-title{ font-size:1.6rem; }
+  .verify-panel{ margin-top:0; padding:22px; }
+  .rating-summary{ margin-bottom:24px; }
+  .filter-pills{ justify-content:center; }
+  .verify-grid{ grid-template-columns:1fr; }
+  .page-header{ padding:130px 0 56px; }
+  #certTable_wrapper{ overflow-x:auto; }
+}
+
+/* Small phones */
+@media (max-width: 575.98px){
+  .btn{ padding:11px 22px; font-size:0.88rem; }
+  .hero{ padding:130px 0 70px; }
+  .trust-hero-figure .big-num{ font-size:2.4rem; }
+  .stat-card .stat-num{ font-size:1.5rem; }
+  .testimonial-card{ margin:8px 4px; padding:22px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}

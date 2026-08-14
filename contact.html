@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Perfect Academy</title>
+    <meta
+      name="description"
+      content="Get in touch with Perfect Academy for enrollment, course details or any questions."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg pa-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><span class="brand-mark">PA</span> Perfect Academy</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#paNav"
+        >
+          <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="paNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="certificate.html"
+                >Certificate Verification</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-cta btn-sm-pa d-lg-inline-flex"
+            >Enroll Now</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <header class="page-header">
+      <div class="container">
+        <div class="breadcrumb-pa">
+          <a href="index.html">Home</a> / Contact Us
+        </div>
+        <h1>Let's Talk About Your Career</h1>
+        <p>
+          Questions about a course, enrollment or anything else? We're happy to
+          help.
+        </p>
+      </div>
+    </header>
+
+    <!-- ================= CONTACT CONTENT ================= -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 reveal">
+            <div class="contact-info-card h-100">
+              <h4 class="font-display text-white mb-4">Contact Information</h4>
+
+              <div class="ci-item">
+                <div class="ci-ico"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <h6>Phone</h6>
+                  <p>9846100559 061434944</p>
+                </div>
+              </div>
+              <div class="ci-item">
+                <div class="ci-ico"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <h6>Email</h6>
+                  <p>perfectacademy0808@gmail.com</p>
+                </div>
+              </div>
+              <div class="ci-item">
+                <div class="ci-ico"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <h6>Address</h6>
+                  <p>Amarsingh Chowk - Pokhara </p>
+                </div>
+              </div>
+              <div class="ci-item">
+                <div class="ci-ico"><i class="bi bi-facebook"></i></div>
+                <div>
+                  <h6>Facebook</h6>
+                  <p>www.facebook.perfectacademy.com</p>
+                </div>
+              </div>
+              <div class="ci-item mb-0">
+                <div class="ci-ico"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <h6>Opening Hours</h6>
+                  <p>Sun – Fri, 9:00 AM – 6:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 reveal">
+            <div class="contact-form-card">
+              <h3 class="font-display h4 mb-4">Send Us a Message</h3>
+
+              <div
+                id="contactSuccessMsg"
+                class="alert alert-success"
+                style="display: none; border-radius: var(--r-sm)"
+              >
+                <i class="bi bi-check-circle-fill me-2"></i>Thank you! Your
+                message has been received (demo only — not sent anywhere).
+              </div>
+
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label-pa">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control-pa"
+                      id="cf_name"
+                      placeholder="Your full name"
+                    />
+                    <div class="invalid-feedback-pa">
+                      Please enter your name.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label-pa">Email</label>
+                    <input
+                      type="email"
+                      class="form-control-pa"
+                      id="cf_email"
+                      placeholder="you@example.com"
+                    />
+                    <div class="invalid-feedback-pa">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label-pa">Phone</label>
+                    <input
+                      type="text"
+                      class="form-control-pa"
+                      id="cf_phone"
+                      placeholder="98XXXXXXXX"
+                    />
+                    <div class="invalid-feedback-pa">
+                      Please enter a valid phone number.
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label-pa">Course</label>
+                    <select class="form-control-pa" id="cf_course">
+                      <option value="">Select a course</option>
+                      <option>Graphic Design</option>
+                      <option>Computer Field Training</option>
+                      <option>Machine Learning</option>
+                      <option>English Classes</option>
+                      <option>Digital Marketing</option>
+                      <option>General Inquiry</option>
+                    </select>
+                    <div class="invalid-feedback-pa">
+                      Please select a course or inquiry type.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label-pa">Subject</label>
+                    <input
+                      type="text"
+                      class="form-control-pa"
+                      id="cf_subject"
+                      placeholder="How can we help?"
+                    />
+                    <div class="invalid-feedback-pa">
+                      Please enter a subject (min. 3 characters).
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label-pa">Message</label>
+                    <textarea
+                      class="form-control-pa"
+                      id="cf_message"
+                      rows="5"
+                      placeholder="Tell us more..."
+                    ></textarea>
+                    <div class="invalid-feedback-pa">
+                      Please enter a message (min. 10 characters).
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary-pa">
+                      Send Message <i class="bi bi-send"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAP PLACEHOLDER ================= -->
+    <section class="pb-5">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.086313134804!2d83.99841457494104!3d28.20469010338174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995950007fd82c5%3A0xa6d466979df9dc7d!2sPerfect%20Academy!5e0!3m2!1sen!2snp!4v1786691992439!5m2!1sen!2snp"
+          width="1300"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <!-- <div class="map-placeholder reveal">
+      <i class="bi bi-geo-alt" style="font-size:2.4rem;"></i>
+      <div>
+        <h5 class="text-white mb-1">Map Placeholder</h5>
+        <p class="mb-0" style="color:rgba(255,255,255,.7); font-size:0.9rem;">Replace with Perfect Academy's actual Google Maps location.</p>
+      </div>
+    </div> -->
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="pa-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="foot-brand">
+              <a
+                href="index.html"
+                class="navbar-brand text-white mb-3 d-inline-flex"
+                ><span class="brand-mark">PA</span> Perfect Academy</a
+              >
+              <p>
+                Learn Skills. Build Your Career. Prepare for the Real World.
+              </p>
+              <div class="foot-trust">
+                <i class="bi bi-people-fill"></i> Trusted by 132K+ Followers
+              </div>
+              <div class="social-row">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="certificate.html">Certificate Verification</a></li>
+              <li><a href="reviews.html">Reviews</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h6>Courses</h6>
+            <ul>
+              <li><a href="courses.html">Graphic Design</a></li>
+              <li><a href="courses.html">Computer Field Training</a></li>
+              <li><a href="courses.html">Machine Learning</a></li>
+              <li><a href="courses.html">English Classes</a></li>
+              <li><a href="courses.html">Digital Marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h6>Contact</h6>
+            <ul>
+              <li><i class="bi bi-telephone me-2"></i>+977-000-0000000</li>
+              <li>
+                <i class="bi bi-envelope me-2"></i>info@perfectacademy.example
+              </li>
+              <li><i class="bi bi-geo-alt me-2"></i>Kathmandu, Nepal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          © 2026 Perfect Academy. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>
